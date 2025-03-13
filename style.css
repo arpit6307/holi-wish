@@ -1,0 +1,191 @@
+/* 🌟 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🌈 Animated Gradient Background */
+body {
+    background: linear-gradient(-45deg, #ff0080, #ff6600, #ffcc00, #33cc33, #0099ff, #6600ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* 🎨 Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🔥 Transparent Navbar */
+.transparent-nav {
+    background: transparent !important;
+    box-shadow: none;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* ✨ Navbar Text with Glow Effect */
+.holi-text {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.holi-text:hover {
+    text-shadow: 0 0 30px red, 0 0 40px yellow, 0 0 50px blue;
+    transform: scale(1.05);
+}
+
+/* 🎭 Main Content Section */
+.myinfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* 🌟 Holi Wishing Note */
+.holi-wish {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffea00;
+    text-shadow: 0 0 20px rgba(255, 255, 0, 1);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.holi-wish:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* 🎥 Video Background */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 🎶 Music Play/Pause Button (Top Right Corner) */
+/* 🎶 Music Button (Stylish) */
+#musicBtn {
+    background: linear-gradient(45deg, #ff0080, #ff6600);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+    margin-left: auto; /* Align to right */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 🖱️ Hover Effect */
+#musicBtn:hover {
+    background: linear-gradient(45deg, #ff6600, #ff0080);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+/* 🎶 Animated Music Icon */
+#musicBtn::before {
+    content: "🎵";
+    display: inline-block;
+    animation: musicAnimate 1s infinite alternate;
+}
+
+/* 🎼 Icon Animation */
+@keyframes musicAnimate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+}
+
+/* 📱 Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #musicBtn {
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+}
+
+/* 🎆 Particle Effect */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+/* 🌟 Transparent Footer */
+.transparent-footer {
+    background: transparent;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* 🔗 Footer Social Icons */
+.social-icon img {
+    margin: 5px;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.social-icon img:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+    .holi-wish {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .myinfo h1 {
+        font-size: 24px;
+    }
+
+    #musicBtn {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
